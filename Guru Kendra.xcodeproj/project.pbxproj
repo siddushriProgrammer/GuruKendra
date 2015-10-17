@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9936AD6E1BD226010065E033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AD6D1BD226010065E033 /* AppDelegate.swift */; };
+		9936AD701BD226010065E033 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AD6F1BD226010065E033 /* MasterViewController.swift */; };
+		9936AD721BD226010065E033 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AD711BD226010065E033 /* DetailViewController.swift */; };
+		9936AD751BD226010065E033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9936AD731BD226010065E033 /* Main.storyboard */; };
+		9936AD771BD226010065E033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9936AD761BD226010065E033 /* Assets.xcassets */; };
+		9936AD7A1BD226010065E033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9936AD781BD226010065E033 /* LaunchScreen.storyboard */; };
+		9936AD851BD226010065E033 /* Guru_KendraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AD841BD226010065E033 /* Guru_KendraTests.swift */; };
+		9936AD901BD226010065E033 /* Guru_KendraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AD8F1BD226010065E033 /* Guru_KendraUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9936AD811BD226010065E033 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9936AD621BD226010065E033 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9936AD691BD226010065E033;
+			remoteInfo = "Guru Kendra";
+		};
+		9936AD8C1BD226010065E033 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9936AD621BD226010065E033 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9936AD691BD226010065E033;
+			remoteInfo = "Guru Kendra";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9936AD6A1BD226010065E033 /* Guru Kendra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guru Kendra.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9936AD6D1BD226010065E033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9936AD6F1BD226010065E033 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		9936AD711BD226010065E033 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9936AD741BD226010065E033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9936AD761BD226010065E033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9936AD791BD226010065E033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9936AD7B1BD226010065E033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9936AD801BD226010065E033 /* Guru KendraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guru KendraTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9936AD841BD226010065E033 /* Guru_KendraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guru_KendraTests.swift; sourceTree = "<group>"; };
+		9936AD861BD226010065E033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9936AD8B1BD226010065E033 /* Guru KendraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guru KendraUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9936AD8F1BD226010065E033 /* Guru_KendraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guru_KendraUITests.swift; sourceTree = "<group>"; };
+		9936AD911BD226010065E033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9936AD671BD226010065E033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9936AD7D1BD226010065E033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9936AD881BD226010065E033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9936AD611BD226010065E033 = {
+			isa = PBXGroup;
+			children = (
+				9936AD6C1BD226010065E033 /* Guru Kendra */,
+				9936AD831BD226010065E033 /* Guru KendraTests */,
+				9936AD8E1BD226010065E033 /* Guru KendraUITests */,
+				9936AD6B1BD226010065E033 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9936AD6B1BD226010065E033 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9936AD6A1BD226010065E033 /* Guru Kendra.app */,
+				9936AD801BD226010065E033 /* Guru KendraTests.xctest */,
+				9936AD8B1BD226010065E033 /* Guru KendraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9936AD6C1BD226010065E033 /* Guru Kendra */ = {
+			isa = PBXGroup;
+			children = (
+				9936AD6D1BD226010065E033 /* AppDelegate.swift */,
+				9936AD6F1BD226010065E033 /* MasterViewController.swift */,
+				9936AD711BD226010065E033 /* DetailViewController.swift */,
+				9936AD731BD226010065E033 /* Main.storyboard */,
+				9936AD761BD226010065E033 /* Assets.xcassets */,
+				9936AD781BD226010065E033 /* LaunchScreen.storyboard */,
+				9936AD7B1BD226010065E033 /* Info.plist */,
+			);
+			path = "Guru Kendra";
+			sourceTree = "<group>";
+		};
+		9936AD831BD226010065E033 /* Guru KendraTests */ = {
+			isa = PBXGroup;
+			children = (
+				9936AD841BD226010065E033 /* Guru_KendraTests.swift */,
+				9936AD861BD226010065E033 /* Info.plist */,
+			);
+			path = "Guru KendraTests";
+			sourceTree = "<group>";
+		};
+		9936AD8E1BD226010065E033 /* Guru KendraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9936AD8F1BD226010065E033 /* Guru_KendraUITests.swift */,
+				9936AD911BD226010065E033 /* Info.plist */,
+			);
+			path = "Guru KendraUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9936AD691BD226010065E033 /* Guru Kendra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9936AD941BD226010065E033 /* Build configuration list for PBXNativeTarget "Guru Kendra" */;
+			buildPhases = (
+				9936AD661BD226010065E033 /* Sources */,
+				9936AD671BD226010065E033 /* Frameworks */,
+				9936AD681BD226010065E033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Guru Kendra";
+			productName = "Guru Kendra";
+			productReference = 9936AD6A1BD226010065E033 /* Guru Kendra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9936AD7F1BD226010065E033 /* Guru KendraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9936AD971BD226010065E033 /* Build configuration list for PBXNativeTarget "Guru KendraTests" */;
+			buildPhases = (
+				9936AD7C1BD226010065E033 /* Sources */,
+				9936AD7D1BD226010065E033 /* Frameworks */,
+				9936AD7E1BD226010065E033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9936AD821BD226010065E033 /* PBXTargetDependency */,
+			);
+			name = "Guru KendraTests";
+			productName = "Guru KendraTests";
+			productReference = 9936AD801BD226010065E033 /* Guru KendraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9936AD8A1BD226010065E033 /* Guru KendraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9936AD9A1BD226010065E033 /* Build configuration list for PBXNativeTarget "Guru KendraUITests" */;
+			buildPhases = (
+				9936AD871BD226010065E033 /* Sources */,
+				9936AD881BD226010065E033 /* Frameworks */,
+				9936AD891BD226010065E033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9936AD8D1BD226010065E033 /* PBXTargetDependency */,
+			);
+			name = "Guru KendraUITests";
+			productName = "Guru KendraUITests";
+			productReference = 9936AD8B1BD226010065E033 /* Guru KendraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9936AD621BD226010065E033 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Adroit;
+				TargetAttributes = {
+					9936AD691BD226010065E033 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					9936AD7F1BD226010065E033 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 9936AD691BD226010065E033;
+					};
+					9936AD8A1BD226010065E033 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 9936AD691BD226010065E033;
+					};
+				};
+			};
+			buildConfigurationList = 9936AD651BD226010065E033 /* Build configuration list for PBXProject "Guru Kendra" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9936AD611BD226010065E033;
+			productRefGroup = 9936AD6B1BD226010065E033 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9936AD691BD226010065E033 /* Guru Kendra */,
+				9936AD7F1BD226010065E033 /* Guru KendraTests */,
+				9936AD8A1BD226010065E033 /* Guru KendraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9936AD681BD226010065E033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9936AD7A1BD226010065E033 /* LaunchScreen.storyboard in Resources */,
+				9936AD771BD226010065E033 /* Assets.xcassets in Resources */,
+				9936AD751BD226010065E033 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9936AD7E1BD226010065E033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9936AD891BD226010065E033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9936AD661BD226010065E033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9936AD721BD226010065E033 /* DetailViewController.swift in Sources */,
+				9936AD701BD226010065E033 /* MasterViewController.swift in Sources */,
+				9936AD6E1BD226010065E033 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9936AD7C1BD226010065E033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9936AD851BD226010065E033 /* Guru_KendraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9936AD871BD226010065E033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9936AD901BD226010065E033 /* Guru_KendraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9936AD821BD226010065E033 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9936AD691BD226010065E033 /* Guru Kendra */;
+			targetProxy = 9936AD811BD226010065E033 /* PBXContainerItemProxy */;
+		};
+		9936AD8D1BD226010065E033 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9936AD691BD226010065E033 /* Guru Kendra */;
+			targetProxy = 9936AD8C1BD226010065E033 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9936AD731BD226010065E033 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9936AD741BD226010065E033 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9936AD781BD226010065E033 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9936AD791BD226010065E033 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9936AD921BD226010065E033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9936AD931BD226010065E033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9936AD951BD226010065E033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Guru Kendra/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adroit.prioritytaag.-.Guru-Kendra";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9936AD961BD226010065E033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Guru Kendra/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adroit.prioritytaag.-.Guru-Kendra";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9936AD981BD226010065E033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Guru KendraTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adroit.prioritytaag.-.Guru-KendraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guru Kendra.app/Guru Kendra";
+			};
+			name = Debug;
+		};
+		9936AD991BD226010065E033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Guru KendraTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adroit.prioritytaag.-.Guru-KendraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guru Kendra.app/Guru Kendra";
+			};
+			name = Release;
+		};
+		9936AD9B1BD226010065E033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Guru KendraUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adroit.prioritytaag.-.Guru-KendraUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Guru Kendra";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9936AD9C1BD226010065E033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Guru KendraUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adroit.prioritytaag.-.Guru-KendraUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Guru Kendra";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9936AD651BD226010065E033 /* Build configuration list for PBXProject "Guru Kendra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9936AD921BD226010065E033 /* Debug */,
+				9936AD931BD226010065E033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9936AD941BD226010065E033 /* Build configuration list for PBXNativeTarget "Guru Kendra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9936AD951BD226010065E033 /* Debug */,
+				9936AD961BD226010065E033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9936AD971BD226010065E033 /* Build configuration list for PBXNativeTarget "Guru KendraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9936AD981BD226010065E033 /* Debug */,
+				9936AD991BD226010065E033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9936AD9A1BD226010065E033 /* Build configuration list for PBXNativeTarget "Guru KendraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9936AD9B1BD226010065E033 /* Debug */,
+				9936AD9C1BD226010065E033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9936AD621BD226010065E033 /* Project object */;
+}

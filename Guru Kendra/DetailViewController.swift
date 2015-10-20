@@ -1,6 +1,6 @@
 //
 //  DetailViewController.swift
-//  Guru Kendra
+//  Guru Kendra.
 //
 //  Created by Siddalingamurthy Gangadharappa on 10/17/15.
 //  Copyright © 2015 Adroit. All rights reserved.

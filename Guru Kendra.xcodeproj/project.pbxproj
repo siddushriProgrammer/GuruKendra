@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9936AD6E1BD226010065E033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AD6D1BD226010065E033 /* AppDelegate.swift */; };
-		9936AD701BD226010065E033 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AD6F1BD226010065E033 /* MasterViewController.swift */; };
-		9936AD721BD226010065E033 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AD711BD226010065E033 /* DetailViewController.swift */; };
 		9936AD751BD226010065E033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9936AD731BD226010065E033 /* Main.storyboard */; };
 		9936AD771BD226010065E033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9936AD761BD226010065E033 /* Assets.xcassets */; };
 		9936AD7A1BD226010065E033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9936AD781BD226010065E033 /* LaunchScreen.storyboard */; };
 		9936AD851BD226010065E033 /* Guru_KendraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AD841BD226010065E033 /* Guru_KendraTests.swift */; };
 		9936AD901BD226010065E033 /* Guru_KendraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9936AD8F1BD226010065E033 /* Guru_KendraUITests.swift */; };
+		9992512F1BDB2F4C00097ABE /* GKSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9992512E1BDB2F4C00097ABE /* GKSignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		999251301BDB2F4C00097ABE /* GKSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9992512E1BDB2F4C00097ABE /* GKSignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		999251311BDB2F4C00097ABE /* GKSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9992512E1BDB2F4C00097ABE /* GKSignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,6 @@
 /* Begin PBXFileReference section */
 		9936AD6A1BD226010065E033 /* Guru Kendra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guru Kendra.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9936AD6D1BD226010065E033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9936AD6F1BD226010065E033 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		9936AD711BD226010065E033 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9936AD741BD226010065E033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9936AD761BD226010065E033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9936AD791BD226010065E033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		9936AD8B1BD226010065E033 /* Guru KendraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guru KendraUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9936AD8F1BD226010065E033 /* Guru_KendraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guru_KendraUITests.swift; sourceTree = "<group>"; };
 		9936AD911BD226010065E033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9992512E1BDB2F4C00097ABE /* GKSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GKSignInViewController.swift; path = "User Entry/GKSignInViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				9936AD6D1BD226010065E033 /* AppDelegate.swift */,
-				9936AD6F1BD226010065E033 /* MasterViewController.swift */,
-				9936AD711BD226010065E033 /* DetailViewController.swift */,
+				999251371BDB331800097ABE /* User Entry */,
 				9936AD731BD226010065E033 /* Main.storyboard */,
 				9936AD761BD226010065E033 /* Assets.xcassets */,
 				9936AD781BD226010065E033 /* LaunchScreen.storyboard */,
@@ -126,6 +125,14 @@
 				9936AD911BD226010065E033 /* Info.plist */,
 			);
 			path = "Guru KendraUITests";
+			sourceTree = "<group>";
+		};
+		999251371BDB331800097ABE /* User Entry */ = {
+			isa = PBXGroup;
+			children = (
+				9992512E1BDB2F4C00097ABE /* GKSignInViewController.swift */,
+			);
+			name = "User Entry";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9936AD721BD226010065E033 /* DetailViewController.swift in Sources */,
-				9936AD701BD226010065E033 /* MasterViewController.swift in Sources */,
+				9992512F1BDB2F4C00097ABE /* GKSignInViewController.swift in Sources */,
 				9936AD6E1BD226010065E033 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				999251301BDB2F4C00097ABE /* GKSignInViewController.swift in Sources */,
 				9936AD851BD226010065E033 /* Guru_KendraTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				999251311BDB2F4C00097ABE /* GKSignInViewController.swift in Sources */,
 				9936AD901BD226010065E033 /* Guru_KendraUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +493,7 @@
 				9936AD961BD226010065E033 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9936AD971BD226010065E033 /* Build configuration list for PBXNativeTarget "Guru KendraTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +502,7 @@
 				9936AD991BD226010065E033 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9936AD9A1BD226010065E033 /* Build configuration list for PBXNativeTarget "Guru KendraUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +511,7 @@
 				9936AD9C1BD226010065E033 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

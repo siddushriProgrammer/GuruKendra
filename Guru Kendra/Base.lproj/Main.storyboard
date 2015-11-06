@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="V7c-q8-8lE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fP1-Om-th5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Sign In View Controller-->
+        <!--Guru Kendra-->
         <scene sceneID="1Tm-Gq-gdI">
             <objects>
                 <viewController id="fP1-Om-th5" customClass="GKSignInViewController" customModule="Guru_Kendra" customModuleProvider="target" sceneMemberID="viewController">
@@ -206,11 +206,14 @@ Shake the device to mail/message us…</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUD-BZ-qmf">
                                 <rect key="frame" x="144" y="84" width="312" height="240"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ngm-Ol-HcY">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ngm-Ol-HcY">
                                         <rect key="frame" x="119" y="28" width="173" height="30"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="fP1-Om-th5" id="0R2-Vx-uG7"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I91-wE-hVX">
                                         <rect key="frame" x="32" y="69" width="79" height="21"/>
@@ -227,11 +230,14 @@ Shake the device to mail/message us…</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgot Password? click" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10N-V1-vD2">
-                                        <rect key="frame" x="-6" y="179" width="131" height="21"/>
+                                        <rect key="frame" x="20" y="179" width="131" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="20" y="179" width="131" height="21"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rP2-0g-Jb6">
                                         <rect key="frame" x="195" y="153" width="26" height="15"/>
@@ -240,11 +246,14 @@ Shake the device to mail/message us…</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oPe-xN-xt8">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="oPe-xN-xt8">
                                         <rect key="frame" x="119" y="66" width="173" height="30"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="fP1-Om-th5" id="cqn-py-DV7"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOI-tj-MMB">
                                         <rect key="frame" x="20" y="31" width="91" height="21"/>
@@ -257,6 +266,9 @@ Shake the device to mail/message us…</string>
                                         <rect key="frame" x="20" y="108" width="272" height="34"/>
                                         <animations/>
                                         <state key="normal" title="Sign In"/>
+                                        <connections>
+                                            <action selector="signInAction:" destination="fP1-Om-th5" eventType="touchUpInside" id="H22-1u-46d"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jX5-kW-hT4">
                                         <rect key="frame" x="130" y="145" width="58" height="32"/>
@@ -265,12 +277,15 @@ Shake the device to mail/message us…</string>
                                         <state key="normal" title="Sign UP"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trt-CQ-iEv">
-                                        <rect key="frame" x="126" y="176" width="30" height="27"/>
+                                        <rect key="frame" x="152" y="176" width="30" height="27"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                         <state key="normal" title="here">
                                             <color key="titleColor" red="0.61708203418345953" green="0.64567435141797169" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="152" y="176" width="30" height="27"/>
+                                        </variation>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -303,7 +318,7 @@ Shake the device to mail/message us…</string>
                             <constraint firstItem="GUD-BZ-qmf" firstAttribute="height" secondItem="cWB-PA-xfN" secondAttribute="height" multiplier="0.4" id="ReY-as-J5V"/>
                             <constraint firstItem="V79-bc-5ZE" firstAttribute="bottom" secondItem="qqM-xM-YSy" secondAttribute="top" id="WXh-Ml-ZY3"/>
                             <constraint firstItem="GUD-BZ-qmf" firstAttribute="top" secondItem="JEi-jS-bQt" secondAttribute="bottom" constant="116" id="Y1A-bQ-VCq"/>
-                            <constraint firstItem="GUD-BZ-qmf" firstAttribute="top" secondItem="JEi-jS-bQt" secondAttribute="bottom" constant="20" id="YIb-Lq-Nm1">
+                            <constraint firstItem="GUD-BZ-qmf" firstAttribute="top" secondItem="JEi-jS-bQt" secondAttribute="bottom" constant="64" id="YIb-Lq-Nm1">
                                 <variation key="heightClass=compact" constant="12"/>
                             </constraint>
                             <constraint firstItem="V79-bc-5ZE" firstAttribute="top" secondItem="GUD-BZ-qmf" secondAttribute="bottom" id="ekS-fc-B8L"/>
@@ -373,30 +388,96 @@ Shake the device to mail/message us…</string>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="WfD-dW-C8U"/>
+                    <navigationItem key="navigationItem" title="Guru Kendra" id="WfD-dW-C8U"/>
+                    <connections>
+                        <outletCollection property="signInFields" destination="ngm-Ol-HcY" collectionClass="NSMutableArray" id="KTc-SD-pbl"/>
+                        <outletCollection property="signInFields" destination="oPe-xN-xt8" collectionClass="NSMutableArray" id="qkB-0W-UJe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dI3-Iv-J6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="723" y="-48"/>
+            <point key="canvasLocation" x="466" y="-167"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FIf-wy-3Ui">
+            <objects>
+                <viewController id="INu-tC-cry" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UzT-1F-aPF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vvb-Vp-TTP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4uF-1L-Cpl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="adN-CN-SrD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="145"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="34V-KW-zV9">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="bdG-PL-A7R" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wha-lS-ZSz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rmw-3a-vfb">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rmw-3a-vfb" id="fui-En-wc9">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bdG-PL-A7R" id="MsU-cs-azv"/>
+                            <outlet property="delegate" destination="bdG-PL-A7R" id="edt-bt-fv4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Lpn-1Z-jeN"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SWf-oH-Sgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2799" y="931"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="jzQ-P2-S06">
+        <scene sceneID="0A0-Pd-qQg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V7c-q8-8lE" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dYM-aF-Xi3">
+                <navigationController id="D14-HG-zG4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UKQ-AI-Zc5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
-                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="fP1-Om-th5" kind="relationship" relationship="rootViewController" id="o92-av-Sp2"/>
+                        <segue destination="bdG-PL-A7R" kind="relationship" relationship="rootViewController" id="D0I-nG-euy"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5mw-xq-fke" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dC-Ad-s9n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-235" y="-130"/>
+            <point key="canvasLocation" x="2085" y="824"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="CHB-5O-6KG">
+            <objects>
+                <splitViewController id="UCC-I2-lOV" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="D14-HG-zG4" kind="relationship" relationship="masterViewController" id="rEQ-Mm-3zH"/>
+                        <segue destination="INu-tC-cry" kind="relationship" relationship="detailViewController" id="1JN-lh-0aT"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZjH-SV-EJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1383" y="338"/>
         </scene>
     </scenes>
 </document>

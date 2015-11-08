@@ -8,22 +8,38 @@
 
 import UIKit
 
-class MasterViewController: UITableViewController {
+class GKMasterViewController: UITableViewController {
 
-    var detailViewController: DetailViewController? = nil
+    var detailViewController: GKDetailViewController? = nil
     var aboutusObjects = [AnyObject]()
+    
+    /// User Entry Mode
+    var userEntryMode: GKMasterDetailState
+    
+    /**
+     
+     int Function
+     
+     - Parameter: coder
+     
+     */
+    init(userEntryMode:GKMasterDetailState) {
+        self.userEntryMode = userEntryMode
+        super.init(style: UITableViewStyle.Plain)
+    }
 
+
+    required init?(coder aDecoder: NSCoder) {
+        self.userEntryMode = GKMasterDetailState.GKUserEntryState
+        super.init(coder: aDecoder)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //self.navigationItem.leftBarButtonItem = self.editButtonItem()
-
-//        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
-//        self.navigationItem.rightBarButtonItem = addButton
         if let split = self.splitViewController {
             let controllers = split.viewControllers
-            self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+            self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? GKDetailViewController
         }
     }
 
@@ -44,7 +60,7 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 //let object = aboutusObjects[indexPath.row] as! NSDate
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
+                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! GKDetailViewController
 
             }
         }
@@ -57,7 +73,17 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1//aboutusObjects.count
+        
+        switch (self.applicationEntryState()) {
+        case .GKUserEntryState:
+            return 1
+        case .GKLogedInUserState:
+            //FIXME: Temporarily Hardcoded
+            return 5
+        case .GKGuestUserState:
+            //FIXME: Temporarily Hardcoded
+            return 3
+        }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -82,8 +108,11 @@ class MasterViewController: UITableViewController {
     }
 
     // MARK: - Private Methods
-    func prepareAboutUsView() {
+    private func applicationEntryState() -> GKMasterDetailState {
         
+        return GKMasterDetailState.GKUserEntryState
     }
+    
+    
 }
 

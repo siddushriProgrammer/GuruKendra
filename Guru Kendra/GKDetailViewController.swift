@@ -8,10 +8,14 @@
 
 import UIKit
 
+
 class GKDetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
-
+    
+    @IBOutlet var borderedButtons: [UIButton]!
+    
+    weak var delegate:GKMasterDetailDelegate?
 
     var detailItem: AnyObject? {
         didSet {
@@ -26,6 +30,13 @@ class GKDetailViewController: UIViewController {
             if let label = self.detailDescriptionLabel {
                 label.text = detail.description
             }
+        }
+        
+        for brButton:UIButton in borderedButtons {
+            
+            brButton.layer.borderWidth = 1.0
+            brButton.layer.borderColor =  UIColor.whiteColor().CGColor
+            brButton.layer.cornerRadius = 8.0
         }
     }
 

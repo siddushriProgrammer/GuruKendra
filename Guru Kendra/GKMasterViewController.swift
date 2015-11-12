@@ -13,32 +13,14 @@ class GKMasterViewController: UITableViewController {
     var detailViewController: GKDetailViewController? = nil
     var aboutusObjects = [AnyObject]()
     
-    /// User Entry Mode
-    var userEntryMode: GKMasterDetailState
-    
-    /**
-     
-     int Function
-     
-     - Parameter: coder
-     
-     */
-    init(userEntryMode:GKMasterDetailState) {
-        self.userEntryMode = userEntryMode
-        super.init(style: UITableViewStyle.Plain)
-    }
-
-
-    required init?(coder aDecoder: NSCoder) {
-        self.userEntryMode = GKMasterDetailState.GKUserEntryState
-        super.init(coder: aDecoder)
-    }
+    weak var delegate:GKMasterDetailDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         if let split = self.splitViewController {
             let controllers = split.viewControllers
+            
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? GKDetailViewController
         }
     }
@@ -74,30 +56,33 @@ class GKMasterViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        switch (self.applicationEntryState()) {
-        case .GKUserEntryState:
+        if (delegate?.applicationEntryState() == .GKUserEntryState){
             return 1
-        case .GKLogedInUserState:
-            //FIXME: Temporarily Hardcoded
-            return 5
-        case .GKGuestUserState:
-            //FIXME: Temporarily Hardcoded
+            
+        } else if (delegate?.applicationEntryState() == .GKGuestUserState) {
             return 3
+        } else if(delegate?.applicationEntryState() == .GKLogedInUserState) {
+            return 5
         }
+       
+        return 1
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
         //let object = aboutusObjects[indexPath.row] as! NSDate
         return cell
     }
 
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
-        return true
+        return false
     }
 
+    override func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             aboutusObjects.removeAtIndex(indexPath.row)
@@ -107,11 +92,7 @@ class GKMasterViewController: UITableViewController {
         }
     }
 
-    // MARK: - Private Methods
-    private func applicationEntryState() -> GKMasterDetailState {
-        
-        return GKMasterDetailState.GKUserEntryState
-    }
+    
     
     
 }

@@ -8,8 +8,12 @@
 
 import UIKit
 
+protocol GKMasterDetailDelegate : class {
+    func applicationEntryState() -> GKMasterDetailState
+}
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate,GKMasterDetailDelegate  {
 
     var window: UIWindow?
 
@@ -17,10 +21,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         // Override point for customization after application launch.
         let splitViewController = self.window!.rootViewController as! UISplitViewController
         
-        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
-       navigationController.topViewController!.navigationItem.leftBarButtonItem = nil//splitViewController.displayModeButtonItem()
+        if (self.applicationEntryState() == GKMasterDetailState.GKUserEntryState) {
+            
+                       
+        }
+
         
+        let navigationDetailController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
+        let detailvc = navigationDetailController.topViewController as! GKDetailViewController
+        detailvc.delegate = self
+       navigationDetailController.topViewController!.navigationItem.leftBarButtonItem = nil//splitViewController.displayModeButtonItem()
         splitViewController.delegate = self
+        
+        let mastervc = (splitViewController.viewControllers[0] as! UINavigationController).topViewController as! GKMasterViewController
+        mastervc.delegate = self
         
         return true
     }
@@ -61,7 +75,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         return false
     }
     
+    func splitViewController(splitViewController: UISplitViewController, showViewController vc: UIViewController, sender: AnyObject?) -> Bool {
+        
+        print("vc identifier \(vc)")
+        
+        return false
+    }
     
-   
+    // MARK: - GMMasterDetailDelegate Implementation
+    func applicationEntryState() -> GKMasterDetailState {
+        
+        return GKMasterDetailState.GKUserEntryState
+    }
 }
 
